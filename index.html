@@ -24,94 +24,93 @@
     </div>
     <div class="questions">
       <!--FORM Begins-->
-      <form class="formOne" >
+      <form class="formOne" id="survey">
         <div class="form-group">
           <label for="person">NAME <i>please</i></label>
           <input id="person" type="text" class="form-contol" >
         </div>
     <!--BEGGINING OF FORM-->
-    <form id="survey">
-      <div class="form-group" id="nameInput">
-        <label for="name">Please enter your name:</label>
-        <input id="name" class="form-control" type="text">
-      </div>
-      <div class="form-group">
-        <label for="q1">Which area of development are you interested in?</label>
-        <select class="form-control" id="question1">
-          <option value="0"></option>
-          <option value="1">Front-End</option>
-          <option value="2">Back-End</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="q2">What type of company are you interested in working for?</label>
-        <select class="form-control" id="question2">
-          <option value="0"></option>
-          <option value="1">Large Enterprise Company</option>
-          <option value="2">Start-Up</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="q3">What type of projects would you most enjoy creating?</label>
-        <select class="form-control" id="question3">
-          <option value="0"></option>
-          <option value="1">Mobile Apps</option>
-          <option value="2">Blogs</option>
-          <option value="3">Business Software</option>
-          <option value="4">Interactive Web Apps</option>
-          <option value="5">Anything, as long as it looks good</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="q4">How comfortable are you with difficult syntax and abstract concepts?</label>
-        <select class="form-control" id="question4">
-          <option value="0"></option>
-          <option value="1">Comfortable with complexity</option>
-          <option value="2">I want things to be simple</option>
-          <option value="3">Less comfortable with abstraction</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="q5">Which aspect of a website do you find most appealing?</label>
-        <select class="form-control" id="question5">
-          <option value="0"></option>
-          <option value="1">The way it looks</option>
-          <option value="2">A sleek mobile experience</option>
-          <option value="3">Efficient code behind it</option>
-          <option value="4">The ability to interact with it</option>
-          <option value="5">Its accessibility</option>
-        </select>
-      </div>
+        <div class="form-group" id="nameInput">
+          <label for="name">Please enter your name:</label>
+          <input id="name" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="q1">Which area of development are you interested in?</label>
+          <select class="form-control" id="question1">
+            <option value="0"></option>
+            <option value="1">Front-End</option>
+            <option value="2">Back-End</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="q2">What type of company are you interested in working for?</label>
+          <select class="form-control" id="question2">
+            <option value="0"></option>
+            <option value="1">Large Enterprise Company</option>
+            <option value="2">Start-Up</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="q3">What type of projects would you most enjoy creating?</label>
+          <select class="form-control" id="question3">
+            <option value="0"></option>
+            <option value="1">Mobile Apps</option>
+            <option value="2">Blogs</option>
+            <option value="3">Business Software</option>
+            <option value="4">Interactive Web Apps</option>
+            <option value="5">Anything, as long as it looks good</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="q4">How comfortable are you with difficult syntax and abstract concepts?</label>
+          <select class="form-control" id="question4">
+            <option value="0"></option>
+            <option value="1">Comfortable with complexity</option>
+            <option value="2">I want things to be simple</option>
+            <option value="3">Less comfortable with abstraction</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="q5">Which aspect of a website do you find most appealing?</label>
+          <select class="form-control" id="question5">
+            <option value="0"></option>
+            <option value="1">The way it looks</option>
+            <option value="2">A sleek mobile experience</option>
+            <option value="3">Efficient code behind it</option>
+            <option value="4">The ability to interact with it</option>
+            <option value="5">Its accessibility</option>
+          </select>
+        </div>
+          <br>
+          <button type="click" class ="btn btn-warning btn-lg" id="ready">READY!</button>
+        </form>
+        </div>
+        <!-- End of Form-->
+        <div class="final">
+        <h1>READY!</h1>
+        <h2>Hello  <span class="person"></span>! </h2>
+        <h2>Here is the Programming Language, you should learn: </h2>
         <br>
-        <button type="click" class ="btn btn-warning btn-lg" id="ready">READY!</button>
-      </form>
+        <div id="one">
+          <strong class="lan1">CSS/Design is the one for you!</strong>
+          <br>
+            You are a Front-end Developer!
+          <br>
+          <a href="https://www.epicodus.com/portland/"><span class="explore">Click Here to Explore!</span></a>
+        </div>
+        <div id="two">
+          <strong class="lan2">JAVA! is Definitely your language!</strong>
+          <br>
+          <a href="https://www.epicodus.com/portland/"><span class="explore">Click Here to Explore!</span></a>
+        </div>
+        <div id="three">
+          <strong class="lan3">C# is made for YOU!</strong>
+          <br>
+          <a href="https://www.epicodus.com/seattle/"><span class="explore">Click Here to Explore!</span></a>
+        </div>
+        <div id="p-l-comic">
+          <img src="https://previews.123rf.com/images/khwanchais/khwanchais1510/khwanchais151000158/46752229-website-development-programmer-writing-HTML-CSS-and-Java-Script-code-Stock-Photo.jpg" alt="programmer imgage" />
+        </div>
       </div>
-      <!-- End of Form-->
-      <div class="final">
-      <h1>READY!</h1>
-      <h2>Hello  <span class="person"></span>! </h2>
-      <h2>Here is the Programming Language, you should learn: </h2>
-      <br>
-      <div id="8">
-        <strong class="lan1">CSS/Design is the one for you!</strong>
-        <br>
-          You are a Front-end Developer!
-        <br>
-        <a href="https://www.epicodus.com/portland/"><span class="explore">Click Here to Explore!</span></a>
-      </div>
-      <div id="9-12">
-        <strong class="lan2">JAVA! is Definitely your language!</strong>
-        <br>
-        <a href="https://www.epicodus.com/portland/"><span class="explore">Click Here to Explore!</span></a>
-      </div>
-      <div id="13-15">
-        <strong class="lan3">C# is made for YOU!</strong>
-        <br>
-        <a href="https://www.epicodus.com/seattle/"><span class="explore">Click Here to Explore!</span></a>
-      </div>
-      <div id="p-l-comic">
-        <img src="https://previews.123rf.com/images/khwanchais/khwanchais1510/khwanchais151000158/46752229-website-development-programmer-writing-HTML-CSS-and-Java-Script-code-Stock-Photo.jpg" alt="programmer imgage" />
-      </div>
-    </div>
   </body>
 </html>
