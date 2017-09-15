@@ -1,12 +1,14 @@
 $(function(){
 $("#formone").submit(function(event) {
-  $("#male-rap, #female-rap, #male-pop, #female-pop, #male-classical, #female-classical").hide();
-var ageInput = parseInt($("input#age").val());
-var genderInput = $("select#gender").val();
-var musicInput = $("input:radio[name=music]:checked").val();
+  $("#8, #9-12, #13-15, #1-19").hide();
+var q1Input = $("input:radio[name=music]:checked").val();
+var q2Input = $("select#gender").val();
+var q3Input = $("select#gender").val();
+var q4Input = $("select#gender").val();
+var q5Input = $("select#gender").val();
 
-if (ageInput === false, genderInput === false, musicInput === false) {
-if (genderInput === 'male' && ageInput <=100 && musicInput === 'rap') {
+if (q1input, q1input, q1input, q1input, q1input) {
+if (q1input === 'male' && ageInput <=100 && musicInput === 'rap') {
 $("#male-rap").show();
 }
 else if (genderInput === 'female' && ageInput <= 100 && musicInput === 'rap') {

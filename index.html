@@ -29,68 +29,59 @@
           <label for="person">NAME <i>please</i></label>
           <input id="person" type="text" class="form-contol" >
         </div>
-        <div class="warning">
-          <h3><em>Please answer the below questions to know your best fit</h3>
-        </div>
-        <br>
-        <div class="choices">
-          <div class="radio">
-            <h4><strong>1. Which one do you rather do?</strong></h4>
-              <label>
-                <input type="radio" name="question1" value="1" checked>
-                a)prefer to design your page than to code!
-              </label>
-              <br>
-              <label>
-                <input type="radio" name="question1" value="2">
-                b) Make sure all the functions are working as they should!
-              </label>
-              <br>
-              <label>
-                <input type="radio" name="question1" value="3">
-                c) Nope! I just can't decide!
-              </label>
-          </div>
-          <br>
-          <div class= Q>
-            <h4><strong>2. Choose the option that you are most attracted to.</strong></h4>
-              <select class="form-control" id="question2">
-                <option value="0"></option>
-                <option value="4">Enjoy working on dynamic websites and work on company like Google. </option>
-                <option value="3">Work with bigger established company and building internal software</option>
-                <option value="2">Fascinating with Android!</option>
-                <option value="1">Obsessing over the website's layouts, colors, and the way it look!</option>
-
-              </select>
-            <br>
-            <h4><strong>3. Choose your most favorite!)</strong></h4>
-              <select class="form-control" id="question3">
-                <option value="0"></option>
-                <option value="4">Writing a novel!</option>
-                <option value="3">Solving Puzzel!</option>
-                <option value="2">Manupulating program!</option>
-                <option value="1">Love that color!</option>
-              </select>
-            <br>
-            <h4><strong>4. Which option most descripe "YOU"?</strong></h4>
-              <select class="form-control" id="question4">
-                <option value="0"></option>
-                <option value="4">Poetic!</option>
-                <option value="3">Practical!</option>
-                <option value="2">Witty!</option>
-                <option value="1">Form over Function!</option>
-              </select>
-            <br>
-            <h4><strong>5. Which one do you like the Least!?</strong></h4>
-              <select class="form-control" id="question5">
-                <option value="0"></option>
-                <option value="4">Cheese!</option>
-                <option value="3">Toast!</option>
-                <option value="2">Coffee!</option>
-                <option value="1">Box!</option>
-              </select>
-          </div>
-        </div>
+    <!--BEGGINING OF FORM-->
+    <form id="survey">
+      <div class="form-group" id="nameInput">
+        <label for="name">Please enter your name:</label>
+        <input id="name" class="form-control" type="text">
+      </div>
+      <div class="form-group">
+        <label for="q1">Which area of development are you interested in?</label>
+        <select class="form-control" id="question1">
+          <option value="0"></option>
+          <option value="1">Front-End</option>
+          <option value="2">Back-End</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q2">What type of company are you interested in working for?</label>
+        <select class="form-control" id="question2">
+          <option value="0"></option>
+          <option value="1">Large Enterprise Company</option>
+          <option value="2">Start-Up</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q3">What type of projects would you most enjoy creating?</label>
+        <select class="form-control" id="question3">
+          <option value="0"></option>
+          <option value="1">Mobile Apps</option>
+          <option value="2">Blogs</option>
+          <option value="3">Business Software</option>
+          <option value="4">Interactive Web Apps</option>
+          <option value="5">Anything, as long as it looks good</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q4">How comfortable are you with difficult syntax and abstract concepts?</label>
+        <select class="form-control" id="question4">
+          <option value="0"></option>
+          <option value="1">Comfortable with complexity</option>
+          <option value="2">I want things to be simple</option>
+          <option value="3">Less comfortable with abstraction</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="q5">Which aspect of a website do you find most appealing?</label>
+        <select class="form-control" id="question5">
+          <option value="0"></option>
+          <option value="1">The way it looks</option>
+          <option value="2">A sleek mobile experience</option>
+          <option value="3">Efficient code behind it</option>
+          <option value="4">The ability to interact with it</option>
+          <option value="5">Its accessibility</option>
+        </select>
+      </div>
         <br>
         <button type="click" class ="btn btn-warning btn-lg" id="ready">READY!</button>
       </form>
@@ -102,28 +93,22 @@
       <h2>Here is the Programming Language, you should learn: </h2>
       <br>
       <div id="8">
-        <strong class="language">CSS/Design is the one for you!</strong>
+        <strong class="lan1">CSS/Design is the one for you!</strong>
         <br>
           You are a Front-end Developer!
         <br>
         <a href="https://www.epicodus.com/portland/"><span class="explore">Click Here to Explore!</span></a>
       </div>
       <div id="9-12">
-        <strong class="language">JAVA! is Definitely your language!</strong>
+        <strong class="lan2">JAVA! is Definitely your language!</strong>
         <br>
         <a href="https://www.epicodus.com/portland/"><span class="explore">Click Here to Explore!</span></a>
       </div>
       <div id="13-15">
-        <strong class="language">C# is made for YOU!</strong>
+        <strong class="lan3">C# is made for YOU!</strong>
         <br>
         <a href="https://www.epicodus.com/seattle/"><span class="explore">Click Here to Explore!</span></a>
       </div>
-      <div id="16-19">
-        <strong class="language"> PHP is your true calling!</strong>
-        <br>
-        <a href="https://www.w3schools.com/php/"><span class="explore">Click Here to Explore!</span></a>
-      </div>
-
       <div id="p-l-comic">
         <img src="https://previews.123rf.com/images/khwanchais/khwanchais1510/khwanchais151000158/46752229-website-development-programmer-writing-HTML-CSS-and-Java-Script-code-Stock-Photo.jpg" alt="programmer imgage" />
       </div>
