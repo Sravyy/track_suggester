@@ -1,0 +1,21 @@
+body {
+  background-color: #C5E0DC ;
+}
+.jumbotron {
+  font-family:"Source Sans Pro", sans-serif;
+  text-align: center;
+  text-shadow:  2px 2px black;
+  margin-bottom: 0;
+}
+
+#start {
+  margin: 25px;
+}
+
+.alert-success {
+  display: none;
+  text-align: center;
+  align-items: center;
+  color: #F38630;
+  font-size: 26px;
+}

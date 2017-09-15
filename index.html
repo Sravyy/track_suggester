@@ -19,5 +19,84 @@
        <p> <button class="btn btn-danger btn-lg" id="start" > FindOut</button></p>
      </div>
     <!--End of Jumbotron-->
+    <!--End of Opening Page-->
+    <div class="alert alert-success" role="alert">
+      <p>
+        Let's get started!
+      </p>
+    </div>
+    <div class="questions">
+      <!--FORM Begins-->
+      <form class="formOne" >
+        <div class="form-group">
+          <label for="person">NAME <i>please</i></label>
+          <input id="person" type="text" class="form-contol" >
+        </div>
+        <div class="warning">
+          <h3><em>Please answer the below questions to know your best fit</h3>
+        </div>
+        <br>
+        <div class="choices">
+          <div class="radio">
+            <h4><strong>1. Which one do you rather do?</strong></h4>
+              <label>
+                <input type="radio" name="question1" value="1" checked>
+                a) Play around with color and font style till you're satified!
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="question1" value="2">
+                b) Make sure all the functions are working as they should!
+              </label>
+              <br>
+              <label>
+                <input type="radio" name="question1" value="3">
+                c) Nope! I just can't decide!
+              </label>
+          </div>
+          <br>
+          <div class= Q>
+            <h4><strong>2. Choose the option that you are most attracted to.</strong></h4>
+              <select class="form-control" id="question2">
+                <option value="0"></option>
+                <option value="4">Enjoy working on dynamic websites and work on company like Facebook. </option>
+                <option value="3">Work with bigger established company and building internal software</option>
+                <option value="2">Fascinating with Android!</option>
+                <option value="1">Obsessing over the website's layouts, colors, and the way it look!</option>
+
+              </select>
+            <br>
+            <h4><strong>3. Choose your most favorite. (Nope, Sorry! you can only pick one option!)</strong></h4>
+              <select class="form-control" id="question3">
+                <option value="0"></option>
+                <option value="4">Writing a novel!</option>
+                <option value="3">Solving Puzzel!</option>
+                <option value="2">Manupulating program!</option>
+                <option value="1">Love that color!</option>
+              </select>
+            <br>
+            <h4><strong>4. Which option most descripe "YOU"?</strong></h4>
+              <select class="form-control" id="question4">
+                <option value="0"></option>
+                <option value="4">Shakespeare!</option>
+                <option value="3">Practical!</option>
+                <option value="2">Witty!</option>
+                <option value="1">Form over Function!</option>
+              </select>
+            <br>
+            <h4><strong>5. Which one do you like the <em>Least!</em>?</strong></h4>
+              <select class="form-control" id="question5">
+                <option value="0"></option>
+                <option value="4">Cheese!</option>
+                <option value="3">Toast!</option>
+                <option value="2">Coffee!</option>
+                <option value="1">Box!</option>
+              </select>
+          </div>
+        </div>
+        <br>
+        <button type="click" class ="btn btn-warning btn-lg" id="ready">READY!</button>
+      </form>
+      <!-- End of Form-->
   </body>
 </html>
