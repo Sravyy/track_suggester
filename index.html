@@ -19,10 +19,10 @@
        <p> <button class="btn btn-danger btn-lg" id="start" >FindOut</button></p>
      </div>
     <!--End of Jumbotron-->
-    <div class = "container">
+    <div class = "container" id= "back-mg">
       <div class="questions">
       <form class="formOne" id="survey">
-        <div class="form-group">
+        <div class="form-group" id="border">
           <label for="person">Name</label>
           <input id="person" type="text" class="form-contol" >
         </div>
@@ -74,15 +74,15 @@
             </select>
           </div>
             <br>
-            <button type="submit" class ="btn btn-warning btn-lg" id="ready">READY!</button>
+            <button type="submit" class ="btn btn-danger btn-lg" id="ready">Ready!</button>
           </form>
           </div>
         </div>
     <!--Enf of Form-->
       <div class="final">
         <div class="language" id="zero">
-          <h2>Hello  <span class="person"></span>! </h2>
-          <h2>Here is the Programming Language, you should learn: </h2>
+          <h2><i>Hello  </i><span class="person"></span>! </h2>
+          <h2><em>Here is the Programming Language, you should learn: </em></h2>
         </div>
         <br>
         <div class="language" id="one">
@@ -99,11 +99,10 @@
         </div>
         <div class="language" id="three">
           <strong class="l">C# is made for YOU!</strong>
-          <br>
           <a href="https://www.epicodus.com/seattle/"><span class="explore">Click Here to Explore!</span></a>
         </div>
         <div class="language" id="p-l-comic">
-          <img src="https://previews.123rf.com/images/khwanchais/khwanchais1510/khwanchais151000158/46752229-website-development-programmer-writing-HTML-CSS-and-Java-Script-code-Stock-Photo.jpg" alt="programmer imgage" />
+          <img src="img/final.jpg" alt="programmer imgage" />
         </div>
     </div>
   </body>
