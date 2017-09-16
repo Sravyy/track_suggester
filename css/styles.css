@@ -1,15 +1,11 @@
-body {
-
+#one, #two, #three, #p-l-comic {
+  display:none;
 }
 .jumbotron {
   font-family:sans-serif;
   text-align: center;
   text-shadow:  2px 2px black;
   margin-bottom: 0;
-}
-
-.container{
-  margin-top: 30px;
 }
 
 #start {
@@ -21,7 +17,6 @@ body {
   text-align: left;
   font-size: 16px;
   font-weight: bolder;
-
 }
 
 .form-control {
@@ -32,36 +27,24 @@ body {
   color: #FA6900;
 }
 
-.radio {
-  margin-left: 25%;
-  margin-right: 25%;
-  text-align: left;
-}
-
 #ready {
   text-align: center;
 }
 
-#coder-comic {
-  width: 30%;
-  margin-top: 30px;
-}
-
-#final {
+.final {
   display: none;
-  color: #C5E0DC;
   font-size: 35px;
   text-align: center;
-  background-color: #3B8686;
 }
 
-#final img {
+.final img {
   width: 40%;
+  margin-bottom: 40px;
 
 }
 
 .language {
-  color: #fde8e7;
+  color: ##271466
   font-weight: 600;
   font-size: 40px;
   /*text-align: center;*/
