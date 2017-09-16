@@ -89,8 +89,9 @@ $ (function(){
          event.preventDefault();
       } else if (vsHighScore(designScore) === true) {
         $("#three, #p-l-comic").addClass("language");
+          event.preventDefault();
         }
-        event.preventDefault();
+
 
         $(".final, #one").show();
         $("#p-l-comic").fadeIn(2000);
