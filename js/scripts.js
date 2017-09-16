@@ -16,7 +16,7 @@
       } else {
         return false;
       }
-    }
+    });
     var clearScore = function(){
       var javaScore = 0;
       var cSharpScore = 0;
@@ -24,7 +24,7 @@
     }
 
     var resetResults = function() {
-      $(#one, #two, #three).addClass("hidden");
+      $("#one, #two, #three, #p-l-comic").addClass("language");
     }
 // front-end logic
     $("form#survey").submit(function(event){
@@ -96,13 +96,23 @@
     // Display based on highscore values
 
         if (vsHighScore(javaScore) === true) {
-            $("#two").removeClass("language");
+            $("#two, #p-l-comic").removeClass("language");
               event.preventDefault();
           } else if (vsHighScore(cSharpScore) === true) {
-            $("#three").removeClass("language");
+            $("#three, #p-l-comic").removeClass("language");
               event.preventDefault();
           } else if (vsHighScore(designScore) === true) {
-            $("#one").removeClass("language");
+            $("#one, #p-l-comic").removeClass("language");
               event.preventDefault();
+          }
+        $("#ready").click(function(event) {
+          $(".final").show();
+         $("#p-l-comic").fadeIn(2000);
+         $(".alert-success").hide();
+         $(".questions").hide();
+         resetResults();
+         clearScores();
+         event.preventDefault();
+        });
 
-});
+    });
