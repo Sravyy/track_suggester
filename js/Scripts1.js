@@ -7,7 +7,7 @@ $ (function(){
       $("#start").click(function(){
         $(".jumbotron").hide();
         $(".questions").fadeIn(1000);
-      
+
       });
 
       $("#survey").submit(function(event){
@@ -88,15 +88,13 @@ $ (function(){
 
     if (vsHighScore(javaScore) === true) {
     $("#one, #p-l-comic").show();
-      event.preventDefault();
+
   } else if (vsHighScore(cSharpScore) === true) {
     $("#two, #p-l-comic").show();
-      event.preventDefault();
   } else if (vsHighScore(designScore) === true) {
     $("#three, #p-l-comic").show();
-      event.preventDefault();
     }
-
+event.preventDefault();
   });
 
 
