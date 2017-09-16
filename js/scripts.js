@@ -119,9 +119,8 @@
         //     $("#one, #p-l-comic").removeClass("language");
         //     event.preventDefault();
         //   }
-          $(".final").show();
+          $("#final").show();
           $("#p-l-comic").fadeIn(2000);
-          $(".alert-success").hide();
           $(".questions").hide();
 
           $(".refresh").click(function() {

@@ -1,28 +1,24 @@
 body {
-  background-color: #C5E0DC ;
+
 }
 .jumbotron {
-  font-family:"Source Sans Pro", sans-serif;
+  font-family:sans-serif;
   text-align: center;
   text-shadow:  2px 2px black;
   margin-bottom: 0;
+}
+
+.container{
+  margin-top: 30px;
 }
 
 #start {
   margin: 25px;
 }
 
-.alert-success {
-  display: none;
-  text-align: center;
-  align-items: center;
-  color: #F38630;
-  font-size: 26px;
-}
-
 .questions {
   display: none;
-  text-align: center;
+  text-align: left;
   font-size: 16px;
   font-weight: bolder;
 
@@ -42,12 +38,6 @@ body {
   text-align: left;
 }
 
-.Q {
-  margin-left: 25%;
-  margin-right: 25%;
-  text-align: center;
-}
-
 #ready {
   text-align: center;
 }
@@ -57,7 +47,7 @@ body {
   margin-top: 30px;
 }
 
-.final {
+#final {
   display: none;
   color: #C5E0DC;
   font-size: 35px;
@@ -65,7 +55,7 @@ body {
   background-color: #3B8686;
 }
 
-.final img {
+#final img {
   width: 40%;
 
 }

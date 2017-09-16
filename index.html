@@ -12,13 +12,98 @@
     <meta charset="utf-8">
     <title>TRACK-SUGGESTER</title>
   </head>
-
   <body>
     <div class="jumbotron">
        <h1>PROGRAMMING LANGUAGE THAT BEST FITS YOU</h1>
        <img src="http://www.eduonix.com/blog/wp-content/uploads/2015/04/15-Most-Popular-Programming-Languages-You-Must-Learn-in-2015.png" alt="diff-languages" />
-       <p> <button class="btn btn-danger btn-lg" id="start" ><a href="form.html">FindOut</a></button></p>
+       <p> <button class="btn btn-danger btn-lg" id="start" >FindOut</button></p>
      </div>
     <!--End of Jumbotron-->
+    <div class = "container">
+      <div class="questions">
+      <form class="formOne" id="survey">
+        <div class="form-group">
+          <label for="person">Name</label>
+          <input id="person" type="text" class="form-contol" >
+        </div>
+          <div class="form-group">
+            <label for="q1">Which area of development are you interested in?</label>
+            <select class="form-control" id="q1">
+              <option value="0"></option>
+              <option value="1">Front-End</option>
+              <option value="2">Back-End</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="q2">What type of company are you interested in working for?</label>
+            <select class="form-control" id="q2">
+              <option value="0"></option>
+              <option value="1">Large Enterprise Company</option>
+              <option value="2">Start-Up</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="q3">What type of projects would you most enjoy creating?</label>
+            <select class="form-control" id="q3">
+              <option value="0"></option>
+              <option value="1">Mobile Apps</option>
+              <option value="2">Blogs</option>
+              <option value="3">Business Software</option>
+              <option value="4">Interactive Web Apps</option>
+              <option value="5">Anything, as long as it looks good</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="q4">How comfortable are you with difficult syntax and abstract concepts?</label>
+            <select class="form-control" id="q4">
+              <option value="0"></option>
+              <option value="1">Comfortable with complexity</option>
+              <option value="2">I want things to be simple</option>
+              <option value="3">Less comfortable with abstraction</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="q5">Which aspect of a website do you find most appealing?</label>
+            <select class="form-control" id="q5">
+              <option value="0"></option>
+              <option value="1">The way it looks</option>
+              <option value="2">A sleek mobile experience</option>
+              <option value="3">Efficient code behind it</option>
+              <option value="4">The ability to interact with it</option>
+              <option value="5">Its accessibility</option>
+            </select>
+          </div>
+            <br>
+            <button type="submit" class ="btn btn-warning btn-lg" id="ready">READY!</button>
+          </form>
+          </div>
+        </div>
+    <!--Enf of Form-->
+    <div id="final">
+      <h1>READY!</h1>
+      <h2>Hello  <span class="person"></span>! </h2>
+      <h2>Here is the Programming Language, you should learn: </h2>
+      <br>
+      <div class="language" id="one">
+        <strong >CSS/Design is the one for you!</strong>
+        <br>
+          You are a Front-end Developer!
+        <br>
+        <a href="https://www.epicodus.com/portland/"><span class="explore">Click Here to Explore!</span></a>
+      </div>
+      <div class="language" id="two">
+        <strong class="language">JAVA! is Definitely your language!</strong>
+        <br>
+        <a href="https://www.epicodus.com/portland/"><span class="explore">Click Here to Explore!</span></a>
+      </div>
+      <div class="language" id="three">
+        <strong class="l">C# is made for YOU!</strong>
+        <br>
+        <a href="https://www.epicodus.com/seattle/"><span class="explore">Click Here to Explore!</span></a>
+      </div>
+      <div class="language" id="p-l-comic">
+        <img src="https://previews.123rf.com/images/khwanchais/khwanchais1510/khwanchais151000158/46752229-website-development-programmer-writing-HTML-CSS-and-Java-Script-code-Stock-Photo.jpg" alt="programmer imgage" />
+      </div>
+  </div>
   </body>
 </html>
