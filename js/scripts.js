@@ -4,35 +4,40 @@
       $(".alert-success").show();
       $(".questions").fadeIn(1000);
     });
+
+    $(".questions form").submit(function(event){
+    event.preventDefault();
+    // y preventDefault allow alert here but not if it's on 56??
+    var nameInput = $("input#person").val().toUpperCase();
+    $(".person").text(nameInput);
+    alert("Hello "+ nameInput + " !");
+  });
 //Back-end logic
+    // set all counts at 0
     var javaScore = 0;
     var cSharpScore = 0;
     var designScore = 0;
-    var tsHighScore = function(score){
-      var highScore = Math.max(javaScore, cSharpScore, designScore);
-      }
-      if(score === highScore && highScore != 0) {
-        return true;
-      } else {
-        return false;
-      }
-    });
-    var clearScore = function(){
-      var javaScore = 0;
-      var cSharpScore = 0;
-      var designScore = 0;
-    }
+    // var tsHighScore =  function(score){
+    //   var highScore = Math.max(javaScore, cSharpScore, designScore)
+    //   }
+    //   if(score === highScore && highScore != 0) {
+    //     return true;
+    //   } else if {
+    //     return false;
+    //   }
+    // });
 
-    var resetResults = function() {
-      $("#one, #two, #three, #p-l-comic").addClass("language");
-    }
+    // var clearScore = function(){
+    //   var javaScore = 0;
+    //   var cSharpScore = 0;
+    //   var designScore = 0;
+    // }
+
+    // var resetResults = function() {
+    //   $("#one, #two, #three, #p-l-comic").addClass("language");
+    // }
 // front-end logic
-    $("form#survey").submit(function(event){
-        var name = $("#name").val();
-        $(".language").text(name);
-        if (name === "") {
-          $("#nameInput").addClass("has-error");
-        }
+    $("#survey").submit(function(event){
 //Score calculation
         var question1 = parseInt($("select#q1").val());
         var question2 = parseInt($("select#q2").val());
@@ -93,26 +98,35 @@
         } else if (q5 === 5){
           designScore +=1;
         }
+
+        var countAnswer = function() {
+         if(javaScore > (cSharpScore || designScore)) {
+           $("#two, #p-l-comic").fadeIn(750);
+         } else if (designScore > (cSharpScore || javaScore )) {
+           $("#one, #p-l-comic").fadeIn(750);
+         } else if (cSharpScore > (designScore || javaScore )) {
+           $("#three, #p-l-comic").fadeIn(750);
+         }
     // Display based on highscore values
 
-        if (vsHighScore(javaScore) === true) {
-            $("#two, #p-l-comic").removeClass("language");
-              event.preventDefault();
-          } else if (vsHighScore(cSharpScore) === true) {
-            $("#three, #p-l-comic").removeClass("language");
-              event.preventDefault();
-          } else if (vsHighScore(designScore) === true) {
-            $("#one, #p-l-comic").removeClass("language");
-              event.preventDefault();
-          }
-        $("#ready").click(function(event) {
+        // if (tsHighScore(javaScore) === true) {
+        //     $("#two, #p-l-comic").removeClass("language");
+        //     event.preventDefault();
+        //   } else if (tsHighScore(cSharpScore) === true) {
+        //     $("#three, #p-l-comic").removeClass("language");
+        //     event.preventDefault();
+        //   } else if (tsHighScore(designScore) === true) {
+        //     $("#one, #p-l-comic").removeClass("language");
+        //     event.preventDefault();
+        //   }
           $(".final").show();
-         $("#p-l-comic").fadeIn(2000);
-         $(".alert-success").hide();
-         $(".questions").hide();
-         resetResults();
-         clearScores();
-         event.preventDefault();
-        });
+          $("#p-l-comic").fadeIn(2000);
+          $(".alert-success").hide();
+          $(".questions").hide();
 
+          $(".refresh").click(function() {
+            refreshPage();
+          });
+    }
     });
+  });
